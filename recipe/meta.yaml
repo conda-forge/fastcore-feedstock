@@ -11,18 +11,17 @@ source:
   sha256: 87731839bd729698ac177969bf494596f5f703df8739f67c52f51a178ceab464
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - packaging
-    - pip
-    - python >=3.6
+    - python >=3.8
 
 test:
   imports:
@@ -41,3 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - kai-tub
+    - synapticarbors
