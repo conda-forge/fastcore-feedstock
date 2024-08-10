@@ -3,7 +3,7 @@ About fastcore-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastcore-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/fastai/fastcore/tree/master/
+Home: https://github.com/fastai/fastcore
 
 Package license: Apache-2.0
 
