@@ -14,6 +14,9 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - py2pyi=fastcore.py2pyi:py2pyi
+    - replace_wildcards=fastcore.py2pyi:replace_wildcards
 
 requirements:
   host:
@@ -28,11 +31,13 @@ test:
     - fastcore
   commands:
     - pip check
+    - py2pyi --help
+    - replace_wildcards --help
   requires:
     - pip
 
 about:
-  home: https://github.com/fastai/fastcore/tree/master/
+  home: https://github.com/fastai/fastcore
   summary: Python supercharged for fastai development
   license: Apache-2.0
   license_file: LICENSE
