@@ -11,7 +11,7 @@ source:
   sha256: 760312289f863deea20399a84ac399e9a2da1ac5c694a13b775d6ea76bcbb452
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -22,6 +22,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - packaging
     - python >=3.8
