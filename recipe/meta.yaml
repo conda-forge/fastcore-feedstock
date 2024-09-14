@@ -1,5 +1,5 @@
 {% set name = "fastcore" %}
-{% set version = "1.7.5" %}
+{% set version = "1.7.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastcore-{{ version }}.tar.gz
-  sha256: c5525de04eab64a0d4f36fa422442302f76730bdeb6d9fb3fe5fbfcaaf3a9735
+  sha256: c1ca7066897747951cb5e46847119e322f9c8ecf9a78a76a871ec036ac64c51c
 
 build:
   number: 0
