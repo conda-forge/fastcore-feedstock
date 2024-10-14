@@ -1,31 +1,30 @@
 {% set name = "fastcore" %}
-{% set version = "1.7.14" %}
-
+{% set version = "1.7.15" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastcore-{{ version }}.tar.gz
-  sha256: a368e524c0faf2d2a4458c206c396c3380344aa5976aaee5b7606cf3d5969b0a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastcore-{{ version }}.tar.gz
+  sha256: 4b10701e0d4ca866e83ce23aea79828dfb3ee7437689e17d58936c9b3cbfce7e
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - py2pyi=fastcore.py2pyi:py2pyi
     - replace_wildcards=fastcore.py2pyi:replace_wildcards
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=64.0
     - pip
-    - python >=3.8
-    - setuptools
   run:
-    - packaging
     - python >=3.8
+    - packaging
 
 test:
   imports:
