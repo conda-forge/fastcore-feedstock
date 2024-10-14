@@ -6,6 +6,10 @@ package:
   version: {{ version }}
 
 source:
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastcore-{{ version }}.tar.gz
+  sha256: 4b10701e0d4ca866e83ce23aea79828dfb3ee7437689e17d58936c9b3cbfce7e
+
+build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
