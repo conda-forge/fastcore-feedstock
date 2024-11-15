@@ -1,6 +1,6 @@
 context:
   version: 1.7.20
-  python_min: "3.8"
+  python_min: "3.9"
 
 package:
   name: fastcore
