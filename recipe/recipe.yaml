@@ -1,6 +1,5 @@
 context:
-  version: 1.7.20
-  python_min: "3.9"
+  version: 1.8.0
 
 package:
   name: fastcore
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastcore/fastcore-${{ version }}.tar.gz
-  sha256: 316dcb0e2d5e338e069f338b3c136ca9eb4ce950ca433da2a80952fc5928ddab
+  sha256: d23e63aff4bcd06dde24cdf9f7ea13c48e7d274ae89e52e826df33c64869c976
 
 build:
   number: 0
@@ -50,3 +49,4 @@ extra:
   recipe-maintainers:
     - kai-tub
     - synapticarbors
+    - thewchan
