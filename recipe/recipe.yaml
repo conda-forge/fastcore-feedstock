@@ -32,6 +32,7 @@ tests:
       imports:
         - fastcore
       pip_check: true
+      python_version: ${{ python_min }}.*
   - script:
       - py2pyi --help
       - replace_wildcards --help
