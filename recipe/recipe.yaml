@@ -1,5 +1,5 @@
 context:
-  version: "1.12.36"
+  version: "1.12.37"
 
 package:
   name: fastcore
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastcore/fastcore-${{ version }}.tar.gz
-  sha256: 38ff8f8ce79e2d0fe48415a7e46947321edd3c15267fe94feaa3eadd3f2b9ebd
+  sha256: be776606b43b2588047ba6990250b8fda7c679e207b12c72c24558874bb10f99
 
 build:
   number: 0
@@ -30,7 +30,9 @@ tests:
       imports:
         - fastcore
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - py2pyi --help
       - replace_wildcards --help
