@@ -1,5 +1,5 @@
 context:
-  version: "1.14.4"
+  version: "1.14.5"
 
 package:
   name: fastcore
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastcore/fastcore-${{ version }}.tar.gz
-  sha256: 05578901ea507ae0eaca2b3141e1164b397e0860331913391165a64811b41666
+  sha256: d6f1b4220913642964da6236047fe1e9474ecaeaf38737e144b296c31eb53a3a
 
 build:
   number: 0
