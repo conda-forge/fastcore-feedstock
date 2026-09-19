@@ -192,6 +192,3 @@ Feedstock Maintainers
 * [@synapticarbors](https://github.com/synapticarbors/)
 * [@thewchan](https://github.com/thewchan/)
 
-
-<!-- dummy commit to enable rerendering -->
-
